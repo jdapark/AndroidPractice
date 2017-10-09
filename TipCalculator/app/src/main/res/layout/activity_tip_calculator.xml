@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.tipcalculator.edu.qc.seclass.tipcalculator.TipCalculatorActivity">
+
+
+    <EditText
+        android:id="@+id/checkAmountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/partySizeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkAmountValue"
+        android:layout_below="@+id/checkAmountValue"
+        android:layout_marginTop="18dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:onClick="computeTip"
+        android:text="COMPUTE TIP"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25%"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_alignTop="@+id/fifteenPercentTotalValue"
+        android:layout_toStartOf="@+id/twentyfivePercentTotalValue" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_alignBaseline="@+id/twentyPercentTotalValue"
+        android:layout_alignBottom="@+id/twentyPercentTotalValue"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25%"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_alignBottom="@+id/fifteenPercentTipValue"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips and totals (per person)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.587"
+        android:id="@+id/textView13"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check amount:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/checkAmountValue"
+        android:layout_alignBottom="@+id/checkAmountValue"
+        android:layout_toStartOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Party size:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_alignBottom="@+id/twentyPercentTipValue"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_alignBottom="@+id/twentyfivePercentTipValue"
+        android:layout_toStartOf="@+id/textView2" />
+
+
+    <EditText
+        android:id="@+id/fifteenPercentTotalValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/fifteenPercentTipValue"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/fifteenPercentTipValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/twentyPercentTipValue"
+        android:layout_alignBottom="@+id/twentyPercentTipValue"
+        android:layout_alignEnd="@+id/textView2"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/twentyPercentTipValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/twentyfivePercentTipValue"
+        android:layout_alignBottom="@+id/twentyfivePercentTipValue"
+        android:layout_alignStart="@+id/twentyPercentTotalValue"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/twentyPercentTotalValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/buttonCompute"
+        android:layout_alignTop="@+id/twentyfivePercentTotalValue"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/twentyfivePercentTipValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/twentyfivePercentTotalValue"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/twentyfivePercentTotalValue"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="307dp" />
+</android.widget.RelativeLayout>
